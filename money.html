@@ -69,54 +69,156 @@
 
     
     <div class="row" id="row1">
-        <div class="location"><img src="Building.jpg" alt="Building"></div>
-        <div class="location"><img src="Building.jpg" alt="Building"></div>
-        <div class="location"><img src="Building.jpg" alt="Building"></div>
-        <div class="location"><img src="Building.jpg" alt="Building"></div>
-        <div class="location"><img src="Building.jpg" alt="Building"></div>
+        <div class="location"><img src="Building.jpg" id="img0" alt="Building"></div>
+        <div class="location"><img src="Building.jpg" id="img1" alt="Building"></div>
+        <div class="location"><img src="Building.jpg" id="img2" alt="Building"></div>
+        <div class="location"><img src="Building.jpg" id="img3" alt="Building"></div>
+        <div class="location"><img src="Building.jpg" id="img4" alt="Building"></div>
     </div>
     <div class="row" id="row2">
-        <div class="location"><img src="Building.jpg" alt="Building"></div>
-        <div class="location"><img src="Building.jpg" alt="Building"></div>
-        <div class="location"><img src="Building.jpg" alt="Building"></div>
-        <div class="location"><img src="Building.jpg" alt="Building"></div>
-        <div class="location"><img src="Building.jpg" alt="Building"></div>
+        <div class="location"><img src="Building.jpg" id="img5" alt="Building"></div>
+        <div class="location"><img src="Building.jpg" id="img6" alt="Building"></div>
+        <div class="location"><img src="Building.jpg" id="img7" alt="Building"></div>
+        <div class="location"><img src="Building.jpg" id="img8" alt="Building"></div>
+        <div class="location"><img src="Building.jpg" id="img9" alt="Building"></div>
     </div>
     <div class="row" id="row3">
-        <div class="location"><img src="Building.jpg" alt="Building"></div>
-        <div class="location"><img src="Building.jpg" alt="Building"></div>
-        <div class="location"><img src="Building.jpg" alt="Building"></div>
-        <div class="location"><img src="Building.jpg" alt="Building"></div>
-        <div class="location"><img src="Building.jpg" alt="Building"></div>
+        <div class="location"><img src="Building.jpg" id="img10" alt="Building"></div>
+        <div class="location"><img src="Building.jpg" id="img11" alt="Building"></div>
+        <div class="location"><img src="Building.jpg" id="img12" alt="Building"></div>
+        <div class="location"><img src="Building.jpg" id="img13" alt="Building"></div>
+        <div class="location"><img src="Building.jpg" id="img14" alt="Building"></div>
     </div>
     <div class="row" id="row4">
-        <div class="location"><img src="Building.jpg" alt="Building"></div>
-        <div class="location"><img src="Building.jpg" alt="Building"></div>
-        <div class="location"><img src="Building.jpg" alt="Building"></div>
-        <div class="location"><img src="Building.jpg" alt="Building"></div>
-        <div class="location"><img src="Building.jpg" alt="Building"></div>
+        <div class="location"><img src="Building.jpg" id="img15" alt="Building"></div>
+        <div class="location"><img src="Building.jpg" id="img16" alt="Building"></div>
+        <div class="location"><img src="Building.jpg" id="img17" alt="Building"></div>
+        <div class="location"><img src="Building.jpg" id="img18" alt="Building"></div>
+        <div class="location"><img src="Building.jpg" id="img19" alt="Building"></div>
     </div>
     <div class="row" id="row5">
-        <div class="location"><img src="Building.jpg" alt="Building"></div>
-        <div class="location"><img src="Building.jpg" alt="Building"></div>
-        <div class="location"><img src="Building.jpg" alt="Building"></div>
-        <div class="location"><img src="Building.jpg" alt="Building"></div>
-        <div class="location"><img src="Building.jpg" alt="Building"></div>
+        <div class="location"><img src="Building.jpg" id="img20" alt="Building"></div>
+        <div class="location"><img src="Building.jpg" id="img21" alt="Building"></div>
+        <div class="location"><img src="Building.jpg" id="img22" alt="Building"></div>
+        <div class="location"><img src="Building.jpg" id="img23" alt="Building"></div>
+        <div class="location"><img src="Building.jpg" id="img24" alt="Building"></div>
     </div>
     <div class="row" id="row6">
-        <div class="location"><img src="Building.jpg" alt="Building"></div>
-        <div class="location"><img src="Building.jpg" alt="Building"></div>
-        <div class="location"><img src="Building.jpg" alt="Building"></div>
-        <div class="location"><img src="Building.jpg" alt="Building"></div>
-        <div class="location"><img src="Building.jpg" alt="Building"></div>
+        <div class="location"><img src="Building.jpg" id="img25" alt="Building"></div>
+        <div class="location"><img src="Building.jpg" id="img26" alt="Building"></div>
+        <div class="location"><img src="Building.jpg" id="img27" alt="Building"></div>
+        <div class="location"><img src="Building.jpg" id="img28" alt="Building"></div>
+        <div class="location"><img src="Building.jpg" id="img29" alt="Building"></div>
     </div>
     <div class="row" id="row7">
-        <div class="location"><img src="Building.jpg" alt="Building"></div>
-        <div class="location"><img src="Building.jpg" alt="Building"></div>
-        <div class="location"><img src="Building.jpg" alt="Building"></div>
-        <div class="location"><img src="Building.jpg" alt="Building"></div>
-        <div class="location"><img src="Building.jpg" alt="Building"></div>
+        <div class="location"><img src="Building.jpg" id="img30" alt="Building"></div>
+        <div class="location"><img src="Building.jpg" id="img31" alt="Building"></div>
+        <div class="location"><img src="Building.jpg" id="img32" alt="Building"></div>
+        <div class="location"><img src="Building.jpg" id="img33" alt="Building"></div>
+        <div class="location"><img src="Building.jpg" id="img34" alt="Building"></div>
     </div>
+    <script>
+        const ids = ["img0", "img1", "img2", "img3", "img4", "img5", "img6", "img7", "img8", "img9", "img10", "img11", "img12", "img13", "img14", "img15", "img16", "img17", "img18", "img19", "img20", "img21", "img22", "img23", "img24", "img25", "img26", "img27", "img28", "img29", "img30", "img31", "img32", "img33", "img34"];
+        let score = 0;
+        let locations = 0;
+        let lastLocation = 0;
+        let monsterLocation = Math.floor(Math.random() * 35);
+        let fancyCoinLocation = Array.from({ length: 6 }, () =>
+            Math.floor(Math.random() * 35)
+        ).filter((value, index, self) => self.indexOf(value) === index);
+    
+        let gameOver = false;
+    
+        function newGame() {
+            score = 0;
+            const scoreEl = document.getElementById("score");
+            scoreEl.textContent = `Score is ${score}`;
+    
+            locations = 0;
+            const locationsEl = document.getElementById("locations");
+            locationsEl.textContent = `Number of locations checked is ${locations}`;
+    
+            lastLocation = 0;
+            monsterLocation = Math.floor(Math.random() * 35);
+            fancyCoinLocation = Array.from({ length: 6 }, () =>
+                Math.floor(Math.random() * 35)
+            ).filter((value, index, self) => self.indexOf(value) === index);
+    
+            gameOver = false;
+    
+            for (let i = 0; i < ids.length; i++) {
+                const img = document
+                    .getElementById(ids[i])
+                    .setAttribute("src", "Building.jpg");
+            }
+        }
+        function check(position) {
+            if (gameOver) {
+                return;
+            }
+    
+            const tileId = ids[position];
+            const img = document.getElementById(tileId);
+    
+            if (position === monsterLocation) {
+                // check for the monster
+                img.setAttribute("src", "monstor.jpg");
+                gameOver = true;
+                score -= 5;
+            } else if (fancyCoinLocation.includes(position)) {
+                // check for the fancy coin
+                img.setAttribute("src", "fancy_coin.jpg");
+                score += 3;
+            } else {
+                // regular coin
+                img.setAttribute("src", "Coin.jpg");
+                score++;
+            }
+    
+            const scoreEl = document.getElementById("score");
+            scoreEl.textContent = `Score is ${score}`;
+    
+            lastLocation = position;
+            locations++;
+            const locationsEl = document.getElementById("locations");
+            locationsEl.textContent = `Number of locations checked is ${locations}`;
+        }
+    
+        function help() {
+            const kinShipPositions = [
+                lastLocation - 1,
+                lastLocation + 1,
+                lastLocation + 5,
+                lastLocation - 5,
+            ];
+    
+            const monsterRow = parseInt(monsterLocation / 5);
+            const currentRow = parseInt(lastLocation / 5);
+            const monsterRowDifference = monsterRow - currentRow;
+    
+            const monsterColumn = monsterLocation % 5;
+            const currentColumn = lastLocation % 5;
+            const monsterColumnDifference = monsterColumn - currentColumn;
+    
+            let helpText = "";
+    
+            if (kinShipPositions.some((p) => fancyCoinLocation.includes(p))) {
+                helpText = "so close!";
+            } else if (
+                monsterRowDifference <= 1 &&
+                monsterRowDifference >= -1 &&
+                monsterColumnDifference <= 1 &&
+                monsterColumnDifference >= -1
+            ) {
+                helpText = "Grrr";
+            } else {
+                helpText = "all clear";
+            }
+            const helpEl = document.getElementById("help");
+            helpEl.textContent = helpText;
+        }
+    </script>
     </body>
+
 
 </html>
